@@ -9,13 +9,13 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -159,9 +159,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.milkshake);
-        Button button = (Button) findViewById(R.id.button);
+        ImageButton button = (ImageButton) findViewById(R.id.button);
         button.setAnimation(myAnim);
-
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -175,14 +174,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button one = (Button) findViewById(R.id.mediaButton);
+        ImageButton one = (ImageButton) findViewById(R.id.mediaButton);
         final MediaPlayer mp = new MediaPlayer();
 
-        one.setOnClickListener(new View.OnClickListener(){
+        one.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                if(mp.isPlaying())
-                {
+                if (mp.isPlaying()) {
                     mp.stop();
                     return;
                 }
@@ -191,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                     mp.reset();
                     AssetFileDescriptor afd;
                     afd = getAssets().openFd("Urge_Surfing.mp3");
-                    mp.setDataSource(afd.getFileDescriptor(),afd.getStartOffset(),afd.getLength());
+                    mp.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
                     mp.prepare();
                     mp.setLooping(false);
                     mp.start();

@@ -4,43 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#00BCD4"
     tools:context="activfy.activfy.MainActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/get"
-        android:id="@+id/button"
-        android:background="#FF6F00"
-        android:textColor="#ffffff"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
-
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
+        android:padding="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff"/>
 
-    <Button
+
+    <ImageButton
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:text="@string/urge_surf"
-        android:layout_centerInParent="true"
-        android:background="#FF6F00"
+        android:layout_marginBottom="59dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/repeat"
+        android:layout_above="@+id/mediaButton"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageButton
         android:id="@+id/mediaButton"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/music"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
