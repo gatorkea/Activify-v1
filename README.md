@@ -18,8 +18,8 @@ Contributors and feedback welcome. You can always create a new branch and add ne
 
 ## Features 
 
-Activity picker (picks a cheap/free random activity for you to fill your time instead of feeding your addiction).
-Urge Surfing.
+- Activity picker (picks a cheap/free random activity for you to fill your time instead of feeding your addiction).
+- Urge Surfing.
 
 ## License
 
