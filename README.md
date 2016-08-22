@@ -1,6 +1,6 @@
 ## Motivation
 
-This video https://www.youtube.com/watch?v=ao8L-0nSYzg inspired me to develop this application. Activify is a tool for addiction recovery.
+This [video](https://www.youtube.com/watch?v=ao8L-0nSYzg) inspired me to develop this application. Activify is a tool for addiction recovery.
 
 ## Contributing
 
