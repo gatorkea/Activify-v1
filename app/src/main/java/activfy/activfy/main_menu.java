@@ -25,7 +25,7 @@ public class main_menu extends ListActivity {
         list.add("Urge Surfing");
         list.add("Nutritional Balancing");
         list.add("Testimonies");
-        list.add("Your brain on porn");
+        list.add("Your Brain on Porn");
         Collections.sort(list);
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout
                                                     .simple_list_item_1,list);
@@ -47,7 +47,7 @@ public class main_menu extends ListActivity {
                     Intent intent = new Intent(main_menu.this,Testimonies.class);
                     startActivity(intent);
                 }
-                else if(selected == ("Your brain on porn")){
+                else if(selected == ("Your Brain on Porn")){
                     Intent intent = new Intent(main_menu.this,BrainOnPorn.class);
                     startActivity(intent);
                 }

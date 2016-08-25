@@ -18,5 +18,6 @@
         android:ems="10"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/editText" />
+        android:id="@+id/editText3"
+        android:textSize="32sp" />
 </RelativeLayout>
